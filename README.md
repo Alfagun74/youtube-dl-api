@@ -12,10 +12,15 @@ docker run alfagun74/youtube-dl-api:latest
 ```
 #### Environment Variables
 * `TZ` - The Timezone to use for the container. Default is Europe/Berlin.
-* `SERVER_PORT` - The port to use for the server. Default is 80.
+* `SERVER_PORT` - The port to use for the server. Default is 80.  
+* `YOUTUBE_DL_DOWNLOAD_HOST` - Path to download the Youtube-DL Binary from. Default is ``https://yt-dl.org/downloads/latest/youtube-dl``  
+#### API Methods
+**GET** ``api/v1/info?url={VIDEO_URL}``  
+Returns all information youtube-dl can find about this video as JSON. Also works with non youtube sources. (See [here](https://ytdl-org.github.io/youtube-dl/supportedsites.html)).
 ## Built With
-* Express
-* Youtube-DL
+* [Express](https://github.com/expressjs/express)
+* [Youtube-DL](https://github.com/ytdl-org/youtube-dl)
+* [node-youtube-dl](https://github.com/przemyslawpluta/node-youtube-dl)
 ## Find Me
 * [GitHub](https://github.com/alfagun74/youtube-dl-api)
 ## Contributing
