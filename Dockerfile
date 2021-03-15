@@ -11,5 +11,6 @@ WORKDIR /usr/app
 COPY . .
 RUN npm install
 RUN npm run build
+RUN rm -rf /tmp/app
 CMD ["npm", "start"]
 EXPOSE 80
