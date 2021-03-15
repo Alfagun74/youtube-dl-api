@@ -27,7 +27,7 @@ Please feel free to issue tickets or pull-requests.
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
 [tags on this repository](https://github.com/your/repository/tags). 
 ## Authors
-* **Alfagun74** - *Maintainer* - [Steam](https://steamcommunity.com/id/Alfagun74/)
+* **Alfagun74** - *Maintainer* - [Steam](https://steamcommunity.com/id/Alfagun74/)  
 See also the list of contributors who participated in this project.
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
