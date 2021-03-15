@@ -1,7 +1,5 @@
 # youtube-dl-api
 Express Youtube-DL REST API Server with Docker Support
-## Getting Started
-These instructions will cover usage information and for the docker container 
 ### Prerequisities
 In order to run this container you'll need docker installed.
 * [Windows](https://docs.docker.com/windows/started)
@@ -9,7 +7,6 @@ In order to run this container you'll need docker installed.
 * [Linux](https://docs.docker.com/linux/started/)
 ### Usage
 #### Container Parameters
-List the different parameters available to your container
 ```shell
 docker run alfagun74/youtube-dl-api:latest
 ```
