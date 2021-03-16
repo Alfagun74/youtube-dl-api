@@ -9,7 +9,7 @@ const port = process.env.SERVER_PORT || 80;
 const app = express();
 const log = new Logger();
 app.use(helmet());
-app.use(morgan("dev"));
+app.use(morgan("short"));
 
 app.get("/api/v1/info", async (req: express.Request, res: express.Response) => {
     const url = req.query.url as string;
@@ -18,12 +18,12 @@ app.get("/api/v1/info", async (req: express.Request, res: express.Response) => {
         return;
     }
     try {
-        log.info(`requested ${url}`);
+        log.info(`client requested "${url}"`);
         const youtubedlPromise = util.promisify(youtubedl.getInfo);
         const info = await youtubedlPromise(url);
         res.send(info);
     } catch (error) {
-        log.error(`error fetching ${url}: ${error}`);
+        log.error(`error fetching "${url}": ${error}`);
         res.sendStatus(500);
     }
 });
